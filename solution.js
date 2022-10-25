@@ -2,7 +2,7 @@
 function divider(arg) {
     const line = `\n ${"-".repeat(15)} ${arg} ${"-".repeat(15)} \n`;
     console.log(line);
-  }
+}
 
 
 //   1. Los or New?
@@ -16,9 +16,10 @@ function nameOfCity(town01) {
     let str0102 = "new";
 
     if (str0100 !== str0101 && str0100 !== str0102) {
-return "The city name does not begin with Los or New";
-} else {
-return town01}
+        return "The city name does not begin with Los or New";
+    } else {
+        return town01
+    }
 }
 
 console.log(nameOfCity("Miami"));
@@ -32,12 +33,13 @@ console.log(nameOfCity("New York"));
 // Create a function named "_isDivisible_". The function should take an integer as an argument. If the integer is divisible by 100, then return true. If not, return false.
 divider(02)
 
-function isDivisible(arg4){
-    if(arg4 % 100 == 0){
-    return true;
-    }   else {
-    return false;
-}}
+function isDivisible(arg4) {
+    if (arg4 % 100 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 console.log(isDivisible(1));
 console.log(isDivisible(10));
@@ -61,11 +63,11 @@ console.log(isRaining(false));
 divider(04)
 
 const geometricalSequence = (num) => {
-let result = ``;
-for (let i = 0; i < num; i++){
-    result += Math.pow(2, i) + " ";
-}
-return result;
+    let result = ``;
+    for (let i = 0; i < num; i++) {
+        result += Math.pow(2, i) + " ";
+    }
+    return result;
 }
 
 console.log(geometricalSequence(4));
@@ -78,12 +80,12 @@ divider(05)
 
 const multiplesOfThree = (num) => {
     let result = ``;
-    for (let i = 1; i <= num; i++){
+    for (let i = 1; i <= num; i++) {
         result += (3 * i) + " ";
     }
     return result;
-    }
-    
+}
+
 console.log(multiplesOfThree(10));
 
 
@@ -94,7 +96,7 @@ console.log(multiplesOfThree(10));
 divider(06)
 
 const powerOf = (num) => Math.pow(num, num);
-    console.log(powerOf(4));
+console.log(powerOf(4));
 
 
 
@@ -104,15 +106,15 @@ const powerOf = (num) => Math.pow(num, num);
 divider(07)
 
 const vowelCount = (str07) => {
-let test = "aeiou";
-let str07smal = str07.toLowerCase();
-let zaehler = 0;
-for (let i = 0; i < str07smal.length; i++) {
-    if (test.includes(str07smal[i])) {
-        zaehler++; 
+    let test = "aeiou";
+    let str07smal = str07.toLowerCase();
+    let zaehler = 0;
+    for (let i = 0; i < str07smal.length; i++) {
+        if (test.includes(str07smal[i])) {
+            zaehler++;
+        }
     }
-}
-return zaehler; 
+    return zaehler;
 }
 console.log(vowelCount("fwb"));
 console.log(vowelCount('hello'));
